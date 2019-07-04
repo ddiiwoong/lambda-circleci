@@ -28,8 +28,8 @@ jobs:
           name: Deploy Functions
           command: |
             cd functions
-            sh ../.circleci/deploy.sh echo
-            sh ../.circleci/deploy.sh hello-world
+            ../.circleci/deploy.sh echo
+            ../.circleci/deploy.sh hello-world
   build_stg:
     working_directory: ~/project
     docker:
